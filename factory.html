@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Factory</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="description" content="Описание">
+    <!--Favicons BEGIN-->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#17a5f4">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <!--Favicons END-->
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:site_name" content="Название сайта">
+    <meta property="og:url" content="https://site-url.com">
+    <meta property="og:description" content="Описание сайта">
+    <meta property="og:image" content="img/preview-social-link/preview-social-link.png">
+    <meta property="vk:image" content="img/preview-social-link/preview-vk-link.png">
+    <!--Critical styles BEGIN-->
+    <style>.header{margin-bottom:3.95833rem;z-index:10;position:relative}.header:after{content:"";position:absolute;top:100%;left:0;width:100%;height:30px;z-index:-1;background:-webkit-gradient(linear,left top,left bottom,from(#31302f),to(rgba(49,48,47,0)));background:-o-linear-gradient(top,#31302f 0,rgba(49,48,47,0) 100%);background:linear-gradient(to bottom,#31302f 0,rgba(49,48,47,0) 100%);opacity:0;-webkit-transition:.8s;-o-transition:.8s;transition:.8s}.header__inner{min-height:6.16667rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.header__item{width:100%;max-width:40%}.header__item_w-auto{max-width:none;width:auto}.header__item_contacts{display:none}.header__wrap-menu-btn{width:6.16667rem;cursor:pointer;position:relative;border:1px solid rgba(204,196,184,.08)}.header__wrap-menu-btn:hover .header__menu-btn_burger{opacity:.7}.header__wrap-menu-btn:hover .header__menu-btn_cross,.header__wrap-menu-btn_active .header__menu-btn_burger,.header__wrap-menu-btn_active:hover .header__menu-btn_burger{opacity:0}.header__wrap-menu-btn_active:hover .header__menu-btn_cross{opacity:.7}.header__menu-btn:before,.header__wrap-menu-btn:before{content:"";padding-top:100%;display:block}.header__menu-btn{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:40px;cursor:pointer;display:block;-webkit-transition:.4s;-o-transition:.4s;transition:.4s;opacity:0}.header__menu-btn_burger,.header__wrap-menu-btn_active .header__menu-btn_cross{opacity:1}.header__menu-btn_burger .header__menu-btn_line{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.header__menu-btn_burger .header__menu-btn_line:nth-child(1){-webkit-transform:translate(-50%,-webkit-calc(-50% - 11px));-ms-transform:translate(-50%,calc(-50% - 11px));transform:translate(-50%,calc(-50% - 11px))}.header__menu-btn_burger .header__menu-btn_line:nth-child(3){-webkit-transform:translate(-50%,-webkit-calc(-50% + 11px));-ms-transform:translate(-50%,calc(-50% + 11px));transform:translate(-50%,calc(-50% + 11px))}.header__menu-btn_cross .header__menu-btn_line:nth-child(1){-webkit-transform:translate(-50%,-50%) rotate(45deg);-ms-transform:translate(-50%,-50%) rotate(45deg);transform:translate(-50%,-50%) rotate(45deg)}.header__menu-btn_cross .header__menu-btn_line:nth-child(2){-webkit-transform:translate(-50%,-50%) rotate(-45deg);-ms-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}.header__menu-btn_line{position:absolute;top:50%;left:50%;width:100%;height:2.5px;background-color:#ccc4b8;-webkit-transition:.6s;-o-transition:.6s;transition:.6s}.header__wrap-logo{width:100%;max-width:215px;display:block;margin-left:auto;margin-right:auto}.header__logo-img{max-width:100%;max-height:100%;width:100%;height:auto}.header__contacts,.header__contacts-item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.header__contacts{padding-right:36px;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}.header__contacts-item{margin-left:28px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:20px;height:20px}.header__contacts-item:first-child,.header__nav-item:first-child{margin-left:0}.header__contacts-item-img{max-width:100%;max-height:100%}.header__nav{position:relative;top:8px;right:-4px}.header__nav-list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-right:2.5rem}.header__nav-item{margin-left:2.54167rem}.header__nav-link,.header__nav-link:after{-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.header__nav-link{color:#fff;font-size:.83333rem;line-height:1.16667rem;padding:4px;display:block;font-family:PlayfairDisplay-Regular,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";position:relative}.header__nav-link:hover{color:#f38504}.header__nav-link:hover:after{width:100%;opacity:1}.header__nav-link:after{content:"";position:absolute;top:100%;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);width:0;height:1px;background-color:#f38504;opacity:0}@media (min-width:768px){body{opacity:0}}@media (max-width:1640px){.header__inner{min-height:5rem}.header__wrap-menu-btn{width:5rem}.header__wrap-logo{max-width:180px}.header__nav-list{padding-right:1.66667rem}.header__nav-item{margin-left:1.66667rem}}@media (max-width:1439px){.header__wrap-logo{max-width:160px}}@media (max-width:1170px){.header__nav-link{font-size:16px;line-height:24px}}@media (max-width:992px){.header{-webkit-transition:.8s;-o-transition:.8s;transition:.8s}.header__item_contacts{display:block}.header__nav{display:none}}@media (max-width:768px){.header__inner{min-height:86px}.header__item{max-width:none;width:auto}.header__wrap-menu-btn{border:0;width:86px}.header__menu-btn{width:26px;height:20px}.header__menu-btn:before{display:none}.header__menu-btn_burger .header__menu-btn_line:nth-child(1){-webkit-transform:translate(-50%,-webkit-calc(-50% - 8px));-ms-transform:translate(-50%,calc(-50% - 8px));transform:translate(-50%,calc(-50% - 8px))}.header__menu-btn_burger .header__menu-btn_line:nth-child(3){-webkit-transform:translate(-50%,-webkit-calc(-50% + 8px));-ms-transform:translate(-50%,calc(-50% + 8px));transform:translate(-50%,calc(-50% + 8px))}.header__menu-btn_line{height:1.5px}.header__wrap-logo{max-width:145px;position:absolute;top:57%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.header__contacts{padding-right:20px}.header__contacts-item{width:15px;height:15px;margin-left:24px}}@media (max-width:479px){.header{margin-bottom:2.22222rem}}@media (max-width:374px){.header__inner{min-height:60px}.header__wrap-menu-btn{width:70px}.header__wrap-logo{max-width:36vw}}</style>
+    <!--Critical styles END-->
+    <!--Critical scripts BEGIN-->
+    <script>!function(e){var n={};function t(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,t),r.l=!0,r.exports}t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:o})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(t.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var r in e)t.d(o,r,function(n){return e[n]}.bind(null,r));return o},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="/",t(t.s=365)}({29:function(e,n){e.exports=function(e){window.addEventListener("load",function(){e()})}},365:function(e,n,t){function o(e){document.documentElement.classList.add(e)}t(29)(function(){document.querySelector("body").classList.add("visible")}),document.documentElement.className=document.documentElement.className.replace("no-js","js"),"ontouchstart"in window?o("touch"):o("no-touch"),"undefined"!=typeof InstallTrigger&&o("firefox"),(/constructor/i.test(window.HTMLElement)||"[object SafariRemoteNotification]"===(!window.safari||"undefined"!=typeof safari&&safari.pushNotification).toString())&&o("safari"),document.documentMode&&(o("ie"),alert("Ваш бразуер устарел. Вы пользуетесь устаревшей версией браузера Internet Explorer. Данная версия браузера не поддреживает многие современные технологии, из-за чего многие страницы отображаются некорректно, а главное - на сайтах могут работать не все функции.")),!document.documentMode&&window.StyleMedia&&o("edge"),window.chrome&&(window.chrome.webstore||window.chrome.runtime)&&o("chrome"),~navigator.appVersion.indexOf("Win")&&o("windows"),~navigator.appVersion.indexOf("Mac")&&o("osx"),~navigator.appVersion.indexOf("Linux")&&o("linux")}});</script>
+    <!--Critical scripts END-->
+    <!--Styles BEGIN-->
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&amp;display=swap" rel="stylesheet">
+    <!--Styles END-->
+  </head>
+  <body class="factory page">
+    <div class="screen-ie"><img class="screen-ie__logo" src="img/logo.png" alt=""></div>
+    <!--Page background BEGIN-->
+    <div class="factory__bg page__bg" aria-hidden="true"></div>
+    <!--Page background END-->
+    <!--Main menu BEGIN-->
+    <div class="main-menu">
+      <div class="main-menu__inner">
+            <nav class="main-menu__nav">
+                  <div class="main-menu__nav-wrap-list">
+                    <ul class="main-menu__nav-list">
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="product.html" target="_blank" rel="noreferrer">Products</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="factory.html" target="_blank" rel="noreferrer">Factory</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="order-delivery.html" target="_blank" rel="noreferrer">Ordering &amp; Delivery</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-menu__nav-wrap-list">
+                    <ul class="main-menu__nav-list">
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="about-us.html" target="_blank" rel="noreferrer">About Us</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Why Us</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Corporate Structure</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-menu__nav-wrap-list">
+                    <ul class="main-menu__nav-list">
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="quality.html" target="_blank" rel="noreferrer">Quality</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Services</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Warranty</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-menu__nav-wrap-list">
+                    <ul class="main-menu__nav-list">
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Values/Mission</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Environment</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Corporate Social Resposibility</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-menu__nav-wrap-list">
+                    <ul class="main-menu__nav-list">
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Contact</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Login</a></li>
+                      <li class="main-menu__nav-item"><a class="main-menu__nav-link" href="#" target="_blank" rel="noreferrer">Feed Back</a></li>
+                    </ul>
+                  </div>
+            </nav>
+            <div class="main-menu__feedback">
+              <div class="main-menu__feedback-text">Want to translate your design ideas? Leave your<br> contacts and we will discuss your project together.</div>
+                  <form class="field-send main-menu__feedback-field-send">
+                    <div class="field-send__inner">
+                          <label class="field-send__wrap-input">
+                            <input class="field-send__input" type="text" name="mail" placeholder="your e-mail" aria-label="Your e-mail">
+                          </label>
+                          <button class="field-send__button">Send</button>
+                    </div>
+                  </form>
+            </div>
+      </div>
+    </div>
+    <!--Main menu END-->
+    <!--Info bottom screen BEGIN-->
+    <!--include ../blocks/info-bottom-screen/info-bottom-screen-->
+    <!--Info bottom screen END-->
+    <!--Header BEGIN-->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__item">
+          <div class="header__wrap-menu-btn">
+            <button class="header__menu-btn header__menu-btn_burger" aria-label="Button show menu"><span class="header__menu-btn_line"></span><span class="header__menu-btn_line"></span><span class="header__menu-btn_line"></span></button>
+            <button class="header__menu-btn header__menu-btn_cross" aria-label="Button hide menu"><span class="header__menu-btn_line"></span><span class="header__menu-btn_line"></span></button>
+          </div>
+        </div>
+        <div class="header__item header__item_w-auto"><a class="header__wrap-logo" href="index.html" target="_blank" aria-label="Site logo" rel="noreferrer">
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp">
+              <source srcset="img/logo.png" type="image/png"><img class="header__logo-img" src="img/logo.png" alt="">
+            </picture></a></div>
+        <div class="header__item header__item_contacts">
+          <div class="header__contacts"><a class="header__contacts-item" href="mailto:info@gmail.com" aria-label="Mail us"><img class="header__contacts-item-img" src="img/icons/icon-mail.svg" alt=""></a><a class="header__contacts-item" href="tel:375000000000" aria-label="Call us"><img class="header__contacts-item-img" src="img/icons/icon-phone.svg" alt=""></a></div>
+        </div>
+        <nav class="header__nav header__item">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item_active"><a class="header__nav-link" href="#" target="_blank" rel="noreferrer">Why Wood</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank" rel="noreferrer">Faq</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank" rel="noreferrer">Site Map</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank" rel="noreferrer">Jaha</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Header END-->
+    <!--Page content BEGIN-->
+    <main class="factory__main page__main">
+      <div class="wrapper">
+        <!--Slider BEGIN-->
+        <div class="factory__slider swiper-container">
+          <div class="swiper-wrapper">
+                            <div class="factory__slider-slide swiper-slide">
+                              <div class="factory__slider-slide-content">
+                                <div class="factory__slider-slide-text"><span class="factory__slider-slide-title">The Board Factory</span>
+                                  <div class="factory__slider-slide-wrap-location"><img class="factory__slider-slide-location-icon" src="img/icons/icon-location.svg" alt="">
+                                    <address class="factory__slider-slide-location">The Board Factory CO., LTD. | Khao Lak | Thailand</address>
+                                  </div>
+                                  <p>The Board Factory Co., Ltd. is what it's says. The factory that makes our boards. Perfect. We created it to set up one of, if<br class='d-none-less-1600'> not the best board factories in the industry. Based on the<br class='d-none-less-1600'> Toyota Production System (TPS) or LEAN, the principles we<br class='d-none-less-1600'> use here come straight from automotive manufacturing.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                </div>
+                                <div class="factory__slider-slide-images">
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-1.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-2.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="factory__slider-slide swiper-slide">
+                              <div class="factory__slider-slide-content">
+                                <div class="factory__slider-slide-text"><span class="factory__slider-slide-title">The Board Factory</span>
+                                  <div class="factory__slider-slide-wrap-location"><img class="factory__slider-slide-location-icon" src="img/icons/icon-location.svg" alt="">
+                                    <address class="factory__slider-slide-location">The Board Factory CO., LTD. | Khao Lak | Thailand</address>
+                                  </div>
+                                  <p>The Board Factory Co., Ltd. is what it's says. The factory that makes our boards. Perfect. We created it to set up one of, if<br class='d-none-less-1600'> not the best board factories in the industry. Based on the<br class='d-none-less-1600'> Toyota Production System (TPS) or LEAN, the principles we<br class='d-none-less-1600'> use here come straight from automotive manufacturing.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                </div>
+                                <div class="factory__slider-slide-images">
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-1.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-2.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="factory__slider-slide swiper-slide">
+                              <div class="factory__slider-slide-content">
+                                <div class="factory__slider-slide-text"><span class="factory__slider-slide-title">The Board Factory</span>
+                                  <div class="factory__slider-slide-wrap-location"><img class="factory__slider-slide-location-icon" src="img/icons/icon-location.svg" alt="">
+                                    <address class="factory__slider-slide-location">The Board Factory CO., LTD. | Khao Lak | Thailand</address>
+                                  </div>
+                                  <p>The Board Factory Co., Ltd. is what it's says. The factory that makes our boards. Perfect. We created it to set up one of, if<br class='d-none-less-1600'> not the best board factories in the industry. Based on the<br class='d-none-less-1600'> Toyota Production System (TPS) or LEAN, the principles we<br class='d-none-less-1600'> use here come straight from automotive manufacturing.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                </div>
+                                <div class="factory__slider-slide-images">
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-1.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-2.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="factory__slider-slide swiper-slide">
+                              <div class="factory__slider-slide-content">
+                                <div class="factory__slider-slide-text"><span class="factory__slider-slide-title">The Board Factory</span>
+                                  <div class="factory__slider-slide-wrap-location"><img class="factory__slider-slide-location-icon" src="img/icons/icon-location.svg" alt="">
+                                    <address class="factory__slider-slide-location">The Board Factory CO., LTD. | Khao Lak | Thailand</address>
+                                  </div>
+                                  <p>The Board Factory Co., Ltd. is what it's says. The factory that makes our boards. Perfect. We created it to set up one of, if<br class='d-none-less-1600'> not the best board factories in the industry. Based on the<br class='d-none-less-1600'> Toyota Production System (TPS) or LEAN, the principles we<br class='d-none-less-1600'> use here come straight from automotive manufacturing.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                </div>
+                                <div class="factory__slider-slide-images">
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-1.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-2.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="factory__slider-slide swiper-slide">
+                              <div class="factory__slider-slide-content">
+                                <div class="factory__slider-slide-text"><span class="factory__slider-slide-title">The Board Factory</span>
+                                  <div class="factory__slider-slide-wrap-location"><img class="factory__slider-slide-location-icon" src="img/icons/icon-location.svg" alt="">
+                                    <address class="factory__slider-slide-location">The Board Factory CO., LTD. | Khao Lak | Thailand</address>
+                                  </div>
+                                  <p>The Board Factory Co., Ltd. is what it's says. The factory that makes our boards. Perfect. We created it to set up one of, if<br class='d-none-less-1600'> not the best board factories in the industry. Based on the<br class='d-none-less-1600'> Toyota Production System (TPS) or LEAN, the principles we<br class='d-none-less-1600'> use here come straight from automotive manufacturing.</p>
+                                  <p>This factory is situated app. 80km north of Phuket Island in Phang-Nga province. It's absolutely stunning setting<br class='d-none-less-1600'> between the mountains and some of Thailand's crazy<br class='d-none-less-1600'> beautiful beaches gives us the the power we need to<br class='d-none-less-1600'> constantly make the best boards.</p>
+                                  <p>And YES there are waves. We are able to test and have right within walking distance of The Board Factory and that's as<br class='d-none-less-1600'> much as you can ask for... . See you over here, some day.</p>
+                                </div>
+                                <div class="factory__slider-slide-images">
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-1.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                  <div class="factory__slider-slide-wrap-image"><img class="factory__slider-slide-image" src="." data-src="img/factory-image-2.png" alt=""><img class="factory__slider-slide-image-preloader image-preloader" src="img/preloader.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+          </div>
+        </div>
+                <div class="factory__slider-arrows slider-arrows"><span class="slider-arrows__arrow slider-arrows__arrow_prev" role="button">
+                    <svg class="slider-arrows__arrow-icon" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 9L2 5L7 1" stroke="white" stroke-width="2"></path>
+                    </svg><span class="slider-arrows__arrow-text">Prev</span></span><span class="slider-arrows__arrow slider-arrows__arrow_next" role="button">
+                    <svg class="slider-arrows__arrow-icon" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L6 5L1 9" stroke="white" stroke-width="2"></path>
+                    </svg><span class="slider-arrows__arrow-text">Next</span></span></div>
+        <div class="factory__slider-pagination"></div>
+        <!--Slider END-->
+      </div>
+    </main>
+    <!--Page content END-->
+    <script src="js/common.min.js"></script>
+    <script src="js/factory.min.js"></script>
+  </body>
+</html>
